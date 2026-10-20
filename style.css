@@ -1,0 +1,164 @@
+
+/* QuickNotes: basic page styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #243047;
+  background: #f3f6fb;
+}
+
+header {
+  background: #234e70;
+  color: white;
+  text-align: center;
+  padding: 28px 16px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin-bottom: 0;
+}
+
+main {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 0 18px;
+}
+
+section {
+  background: white;
+  margin-bottom: 24px;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  margin-top: 0;
+  color: #234e70;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #1769aa;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  background: #104d80;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+label {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #b8c3d1;
+  border-radius: 6px;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+#submit-btn {
+  margin-top: 16px;
+}
+
+#status {
+  padding: 10px;
+  border-radius: 6px;
+  background: #edf1f5;
+}
+
+#status.success {
+  color: #176534;
+  background: #e4f6e9;
+}
+
+#status.error {
+  color: #a32121;
+  background: #fde8e8;
+}
+
+#notes-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.note-item {
+  margin: 14px 0;
+  padding: 16px;
+  border: 1px solid #d7dfeb;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.note-item h3 {
+  margin-top: 0;
+}
+
+.note-item p {
+  white-space: pre-wrap;
+}
+
+.delete-btn {
+  background: #b42332;
+}
+
+.delete-btn:hover:not(:disabled) {
+  background: #851b27;
+}
+
+.empty-state {
+  color: #596579;
+  font-style: italic;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  color: #596579;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin: 16px auto;
+    padding: 0 12px;
+  }
+
+  section {
+    padding: 16px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
